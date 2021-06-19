@@ -1,5 +1,5 @@
 body {
-  height: 100%;
+  height: 100vh;
 }
 
 .square {
@@ -10,16 +10,20 @@ body {
   height: 100px;
   width: 100px;
   background-color: yellow;
+  border: 0px dotted red;
   animation-name: susiapvalinti;
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
 }
 @keyframes susiapvalinti {
   0% {
     border-radius: 0;
+    background-color: yellow;
+    border-width: 0;
   }
   100% {
     border-radius: 50%;
     background-color: blue;
+    border-width: 10px;
   }
 }
